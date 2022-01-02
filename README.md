@@ -22,4 +22,4 @@ Figure 1. Boxplots showing gene expression values of molecular markers from micr
 <br>
 
 ![Fourfold plot](figures/fourfoldplot.png)
-Figure 2. Four-fold plot visualizing the confusion matrix resulting from the comparison of predicted classification of samples between normal and cancerous breast tissue in the validation set versus the observed classification of the samples. This graph was generated in R.
+Figure 2. Fourfold plot visualizing the confusion matrix resulting from the comparison of predicted classification of samples between normal and cancerous breast tissue in the validation set versus the observed classification of the samples. This graph was generated in R.
