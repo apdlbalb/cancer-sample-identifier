@@ -15,3 +15,8 @@ The model successfully identified the correct type for the majority of the sampl
 
 It is very possible that global expression of the transcriptome was affected in the carcinoma samples, given that cancer is a complex disease (Hirata et al., 2014). With more time, I would have liked to create a separate random forest model which uses housekeeping genes as features and see whether they are less effective at prediction compared to this classifier.
 
+## Figures
+
+Figure 1. Boxplots showing gene expression values of molecular markers from microarrays of histologically normal and cancerous breast tissue.  This graph was generated in R.
+
+Figure 2. Four-fold plot visualizing the confusion matrix resulting from the comparison of predicted classification of samples between normal and cancerous breast tissue in the validation set versus the observed classification of the samples. This graph was generated in R.
