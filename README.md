@@ -7,6 +7,7 @@ Standard practices in breast cancer diagnosis using magnetic resonance imaging a
 The microarray data was obtained from the GEO dataset GSE10780 submitted my Chen et al.  This dataset was selected because the annotations were particularly amenable to the analysis, whereby the samples were separated in simple groupings, either “Unremarkable breast ducts (Normal)” or “Invasive ductal carcinoma (IDC)”.  It was also attractive because of its size, with 185 in samples total (143 Normal and 42 IDC).  To address the issues of normalization inherent in gene expression data, the authors validated calculated microarray values against the more accurate RT-PCR method for a subset of the samples.
 
 From Figure 1, there appears to be an outlier in each of BRCA1-Normal, ESR2-Carcinoma, and PGR-Carcinoma.  Chen et al. (2010) discuss their judgement in labelling samples from edge cases, such as when histologically normal tissue presented aberrant expression.  In these situations, the authors assigned an IDC label to IDC-like normal tissue if its rank in the upregulation and/or downregulation of different tumour-associated genes, relative to all the other normal tissues, meet a certain threshold.  This may account for the outliers.
+
 If data was found missing for any of the probes while creating the training and validation sets, the associated sample was removed from the analysis because it is more likely that this is an artefact of the use of microarrays in data collection rather than zero expression. 
 
 ## Discussion and Conclusion
