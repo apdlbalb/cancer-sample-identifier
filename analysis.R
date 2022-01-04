@@ -36,16 +36,6 @@ NUM_MARKERS = 7
 # getMarkerExpression obtains the gene expression values of seven molecular markers
 # as identified in the constants above for the samples listed in "dfSampleSet",
 # which contains a list of "numSamples" samples.
-# getMarkerExpression <- Int (dataframeof 
-#                                        String [accession]
-#                                        String [title]
-#                                        Numeric [MARKER]
-#                                        Numeric [MARKER]
-#                                        Numeric [MARKER]
-#                                        Numeric [MARKER]
-#                                        Numeric [MARKER]
-#                                        Numeric [MARKER]
-#                                        Numeric [MARKER])
 # Requires: Samples must exist in the GEO database
 #           R package GEOquery
 #           Marker genes and their probe IDs must be defined before declaring
