@@ -23,3 +23,17 @@ Figure 1. Boxplots showing gene expression values of molecular markers from micr
 
 ![Fourfold plot](figures/fourfoldplot.png)
 Figure 2. Fourfold plot visualizing the confusion matrix resulting from the comparison of predicted classification of samples between normal and cancerous breast tissue in the validation set versus the observed classification of the samples. This graph was generated in R.
+
+## Acknowledgements
+-	I modified code from the grouped boxplot example in the R graph gallery to generate one of the figures.
+-	I modified code from an example script in Prof. Adamowicz’s Fall 2021 BINF*6210 class to create the random forest classifier.
+-	I modified code from StackOverflow to create the figure visualizing the confusion matrix.
+-	I also consulted StackOverflow and Biostars frequently to debug my code. 
+-	I used GeneAnnot to find the Affymetrix probe ID’s of the molecular markers.
+-	I am very grateful to my study group (Nykole Crevits, Shalvi Chirmade, and Emily Maier) for their support throughout this project.
+
+## References
+Hirata, B. K. B., Oda, J. M. M., Losi Guembarovski, R., Ariza, C. B., Oliveira, C. E. C. D., & Watanabe, M. A. E. (2014). Molecular Markers for Breast Cancer: Prediction on Tumor Behavior. Disease Markers, 2014, 1-12. doi:10.1155/2014/513158
+
+Chen, D.-T., Nasir, A., Culhane, A., Venkataramu, C., Fulp, W., Rubio, R., . . . Yeatman, T. (2010). Proliferative genes dominate malignancy-risk gene signature in histologically-normal breast tissue. Breast Cancer Research and Treatment, 119(2), 335-346. doi:10.1007/s10549-009-0344-y
+
