@@ -33,7 +33,8 @@ Figure 2. Fourfold plot visualizing the confusion matrix resulting from the comp
 -	I am very grateful to my study group (Nykole Crevits, Shalvi Chirmade, and Emily Maier) for their support throughout this project.
 
 ## References
-Hirata, B. K. B., Oda, J. M. M., Losi Guembarovski, R., Ariza, C. B., Oliveira, C. E. C. D., & Watanabe, M. A. E. (2014). Molecular Markers for Breast Cancer: Prediction on Tumor Behavior. Disease Markers, 2014, 1-12. doi:10.1155/2014/513158
+Banin Hirata, Oda, J. M. M., Losi Guembarovski, R., Ariza, C. B., Oliveira, C. E. C. de, & Watanabe, M. A. E. (2014). Molecular Markers for Breast Cancer: Prediction on Tumor Behavior. Disease Markers, 2014, 513158–12. https://doi.org/10.1155/2014/513158
 
-Chen, D.-T., Nasir, A., Culhane, A., Venkataramu, C., Fulp, W., Rubio, R., . . . Yeatman, T. (2010). Proliferative genes dominate malignancy-risk gene signature in histologically-normal breast tissue. Breast Cancer Research and Treatment, 119(2), 335-346. doi:10.1007/s10549-009-0344-y
+Chen, Nasir, A., Culhane, A., Venkataramu, C., Fulp, W., Rubio, R., Wang, T., Agrawal, D., McCarthy, S. M., Gruidl, M., Bloom, G., Anderson, T., White, J., Quackenbush, J., & Yeatman, T. (2009). Proliferative genes dominate malignancy-risk gene signature in histologically-normal breast tissue. Breast Cancer Research and Treatment, 119(2), 335–346. https://doi.org/10.1007/s10549-009-0344-y
+
 
