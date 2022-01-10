@@ -113,11 +113,14 @@ bp_tissue_type <- rep(c(rep(SAMPLE_TYPE1_NAME,
                               length(dfValidation[dfValidation$title == SAMPLE_TYPE2_NAME,]$accession))),
                         7)
 
-bp_expression <- dfValidation[[3]]
-
-for (i in 3:(NUM_MARKERS+1)){
-  bp_expression <- cbind(bp_expression, dfValidation[[i]])
-}
+bp_expression <- c(dfValidation[[3]],
+                   dfValidation[[4]],
+                   dfValidation[[5]],
+                   dfValidation[[6]],
+                   dfValidation[[7]],
+                   dfValidation[[8]],
+                   dfValidation[[9]])
+                   
 
 # Boxplot!
 bp_data <- data.frame(bp_markers, bp_tissue_type, bp_expression)
