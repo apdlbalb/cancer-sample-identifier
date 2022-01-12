@@ -33,13 +33,10 @@ NUM_MARKERS = 7
 
 ####################### DEFINE FUNCTIONS. ############################
 
-# getMarkerExpression obtains the gene expression values of seven molecular markers
-# as identified in the constants above for the samples listed in "dfSampleSet",
-# which contains a list of "numSamples" samples.
+# getMarkerExpression obtains the gene expression values of molecular markers defined in "dfMarkerProbes"
+# for the samples listed in "dfSampleSet", which contains a list of "numSamples" samples.
 # Requires: Samples must exist in the GEO database
 #           R package GEOquery
-#           Marker genes and their probe IDs must be defined before declaring
-#           the function
 
 getMarkerExpression <- function(numSamples, dfSampleSet, dfMarkerProbes) {
   NA_index = vector()
