@@ -1,17 +1,3 @@
-# LIBRARIES -----------------------------------------------------------------
-#install.packages("rentrez")
-library(rentrez)
-#install.packages("tidyverse")
-library(tidyverse)
-#install.packages("randomForest")
-library(randomForest)
-#if (!requireNamespace("BiocManager", quietly = TRUE))
-#  install.packages("BiocManager")
-#BiocManager::install("GEOquery")
-library(GEOquery)
-#BiocManager::install("Biostrings")
-library(Biostrings)
-
 NUMBER_OF_GROUP_SAMPLES_RANDOM_FOREST = 20
 
 GEODATASET = "GSE10780"
@@ -31,6 +17,20 @@ MARKER_PROBES = t(data.frame(c("ESR1", "205225_at"),
                              c("TP53", "201746_at")))
 
 NUM_MARKERS = 7
+
+# LIBRARIES -----------------------------------------------------------------
+#install.packages("rentrez")
+library(rentrez)
+#install.packages("tidyverse")
+library(tidyverse)
+#install.packages("randomForest")
+library(randomForest)
+#if (!requireNamespace("BiocManager", quietly = TRUE))
+#  install.packages("BiocManager")
+#BiocManager::install("GEOquery")
+library(GEOquery)
+#BiocManager::install("Biostrings")
+library(Biostrings)
 
 # FUNCTIONS ---------------------------------------------------------------------
 
