@@ -35,6 +35,9 @@ NUM_MARKERS = 7
 
 # getMarkerExpression obtains the gene expression values of molecular markers defined in "dfMarkerProbes"
 # for the samples listed in "dfSampleSet", which contains a list of "numSamples" samples.
+# (dataframeof "accession" "title" Marker_1...Marker_n) <- Int 
+#                                                          (dataframeof "accession" "title")
+#                                                          (dataframeof GeneSymbol ProbeID)
 # Requires: Samples must exist in the GEO database
 #           R package GEOquery
 
@@ -109,7 +112,6 @@ bp_tissue_type <- rep(c(rep(SAMPLE_TYPE1_NAME,
                           rep(SAMPLE_TYPE2_NAME, 
                               length(dfValidation[dfValidation$title == SAMPLE_TYPE2_NAME,]$accession))),
                         7)
-
 bp_expression <- c(dfValidation[[3]],
                    dfValidation[[4]],
                    dfValidation[[5]],
