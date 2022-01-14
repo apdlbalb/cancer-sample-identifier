@@ -1,3 +1,4 @@
+# LIBRARIES -----------------------------------------------------------------
 #install.packages("rentrez")
 library(rentrez)
 #install.packages("tidyverse")
@@ -31,7 +32,7 @@ MARKER_PROBES = t(data.frame(c("ESR1", "205225_at"),
 
 NUM_MARKERS = 7
 
-####################### DEFINE FUNCTIONS. ############################
+# FUNCTIONS ---------------------------------------------------------------------
 
 # getMarkerExpression obtains the gene expression values of molecular markers defined in "dfMarkerProbes"
 # for the samples listed in "dfSampleSet", which contains a list of "numSamples" samples.
@@ -64,7 +65,7 @@ getMarkerExpression <- function(numSamples, dfSampleSet, dfMarkerProbes) {
   return(dfSampleSet)
 }
 
-####################### GET DATA. ############################
+# GET DATA -------------------------------------------------------------------------
 
 # Pull list of samples in GEO dataset.
 GSE_search <- entrez_search("gds", term = paste(GEODATASET, " AND gsm[Entry Type]"), retmax = 1000)
@@ -102,8 +103,6 @@ dfTraining[,3:(2+NUM_MARKERS)] <- NA
 
 # Populate marker gene expression columns with data from the sample set.
 dfTraining <- getMarkerExpression(NUMBER_OF_GROUP_SAMPLES_RANDOM_FOREST, dfTraining, MARKER_PROBES)
-
-#### VISUALIZE
 
 # Re-organize tidy data for boxplot.
 bp_markers <- rep(MARKER_PROBES[,1], each = length(dfValidation$accession))
@@ -150,7 +149,7 @@ legend("topleft",
        col = c("pink", "chartreuse"),
        pch = 15, bty = "n", pt.cex = 3, cex = 1.2,  horiz = F, inset = c(0.1, 0.1))
 
-################ RANDOM FOREST CLASSIFIER. ######################
+# RANDOM FOREST CLASSIFIER --------------------------------------------------------
 
 # Create random forest model based on training set.
 sample_classifier <- randomForest::randomForest(x = dfTraining[, 3:9], 
@@ -163,9 +162,6 @@ sample_classifier
 # Test classifier on validation set.
 predictValidation <- predict(sample_classifier, dfValidation[, 3:9])
 cmatrix <- table(observed = unlist(dfValidation$title), predicted = predictValidation)
-
-
-# VISUALIZE
 
 # Create four fold plot for the confusion matrix.
 fourfoldplot(cmatrix, 
