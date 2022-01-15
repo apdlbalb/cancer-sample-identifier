@@ -36,9 +36,9 @@ library(Biostrings)
 
 # getMarkerExpression obtains the gene expression values of molecular markers defined in "dfMarkerProbes"
 # for the samples listed in "dfSampleSet", which contains a list of "numSamples" samples.
-# (dataframeof "accession" "title" Marker_1...Marker_n) <- Int 
-#                                                          (dataframeof "accession" "title")
-#                                                          (dataframeof GeneSymbol ProbeID)
+# (dataframeof "accession" "title" MarkerExpression_1...MarkerExpression_n) <- Int, 
+#                                                                              (dataframeof "accession" "title"),
+#                                                                              (dataframeof GeneSymbol ProbeID)
 # Requires: Samples must exist in the GEO database
 #           R package GEOquery
 
